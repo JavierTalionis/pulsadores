@@ -1,3 +1,9 @@
+let time = 0
+basic.showString("Inicio")
+radio.setGroup(1)
 basic.forever(function () {
-	
+    time = randint(5, 10)
+    time = time * 1000
+    control.waitMicros(time)
+    basic.showNumber(time / 1000)
 })
