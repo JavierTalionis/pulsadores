@@ -5,6 +5,8 @@ input.onButtonPressed(Button.B, function () {
     basic.showString("" + (node))
 })
 radio.onReceivedValue(function (name, value) {
+    name = name
+    value = value
     if (value == 1) {
         point += 1
         basic.showString("" + (point))
