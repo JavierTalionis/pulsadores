@@ -23,11 +23,12 @@ let time = 0
 let node = 0
 let point = 0
 radio.setGroup(1)
+soundExpression.hello.play()
 basic.forever(function () {
     time = randint(5, 10)
     time = time * 1000
     basic.pause(time)
-    soundExpression.hello.play()
     node = randint(1, 5)
     radio.sendNumber(node)
+    basic.showNumber(node)
 })
