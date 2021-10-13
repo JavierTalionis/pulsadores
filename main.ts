@@ -1,5 +1,5 @@
 radio.onReceivedNumber(function (receivedNumber) {
-    basic.showNumber(receivedNumber)
+	
 })
 input.onButtonPressed(Button.A, function () {
     basic.showString("" + (point))
@@ -22,6 +22,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 let time = 0
 let node = 0
 let point = 0
+music.setVolume(21)
 radio.setGroup(1)
 soundExpression.hello.play()
 basic.forever(function () {
